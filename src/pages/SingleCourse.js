@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import defaultBcg from '../img/two-women-who-code.jpg';
 import { CourseContext } from '../context';
-import { Link } from 'react-router-dom';
 import StyledHero from '../components/StyledHero';
 import Banner from '../components/Banner';
 import Title from '../components/Title';

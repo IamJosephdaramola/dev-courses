@@ -51,6 +51,11 @@ body {
 	background: var(--primary-color);
 }
 
+.rating-icon {
+	color: var(--secondary-color);
+	font-size: 1.6rem;
+}
+
 .banner {
 	display: inline-block;
 	background: rgba(0, 0, 0, 0.7);

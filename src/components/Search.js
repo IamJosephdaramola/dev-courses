@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaStar } from 'react-icons/fa';
 import defaultImg from '../img/showcase.jpg';
 import algoliasearch from 'algoliasearch/lite';
 import {
@@ -62,7 +63,12 @@ const Hit = ({ hit }) => (
 					Category: <span>{hit.category}</span>
 				</li>
 				{hit.providerRatings && (
-					<li className='list-group-item'>Ratings: {hit.providerRatings}</li>
+					<li className='list-group-item'>
+						Ratings: {hit.providerRatings}{' '}
+						<span className='rating-icon'>
+							<FaStar />
+						</span>
+					</li>
 				)}
 				{hit.duration && hit.durationPeriod ? (
 					<li className='list-group-item'>
