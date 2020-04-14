@@ -73,7 +73,7 @@ body {
 
 .jumbotron {
 	color: var(--light-color);
-	background: var(--dark-color);
+	background: black;
 	position: relative;
 	width: 100vw;
 }
@@ -100,6 +100,7 @@ body {
 		padding: 2rem 3rem;
 	}
 
+	.jumbotron h1,
 	.banner h1 {
 		font-size: 2.5rem;
 	}
@@ -110,6 +111,7 @@ body {
 		padding: 2rem 6rem;
 	}
 
+	.jumbotron h1,
 	.banner h1 {
 		font-size: 4rem;
 	}

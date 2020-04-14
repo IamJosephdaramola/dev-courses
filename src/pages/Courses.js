@@ -10,7 +10,7 @@ const Courses = () => {
 					<div className='container'>
 						<div className='row'>
 							<div className='col-md-8 mx-auto'>
-								<h1 className=''>Grow your skills. Boost your career.</h1>
+								<h1 className='mb-2'>Grow your skills. Boost your career.</h1>
 								<p className='lead'>
 									Our mind-blowing learning experience makes it easier than ever to grow
 									your coding skills. So pick a course, start learning, and give your
