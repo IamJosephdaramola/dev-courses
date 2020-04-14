@@ -1,9 +1,7 @@
-import React from 'react';
-
-import {} from 'react-icons/fa';
+import React, { Fragment } from 'react';
 
 const Hero = ({ children }) => {
-	return <header>{children}</header>;
+	return <Fragment>{children}</Fragment>;
 };
 
 export default Hero;

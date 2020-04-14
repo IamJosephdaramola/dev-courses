@@ -77,11 +77,13 @@ class SingleCourse extends Component {
 							<h3 className='font-weight-bold'>Info</h3>
 							{level && <p className=''>Level: {level} </p>}
 							{medium && <p className=''>Medium: {medium} </p>}
-							{duration && durationPeriod && (
+							{duration && durationPeriod ? (
 								<p className=''>
 									Course Duration: {duration}
 									{durationPeriod}{' '}
 								</p>
+							) : (
+								<p className=''>Course Duration: Unavailable</p>
 							)}
 							{programType && <p className=''>Program Type: {programType} </p>}
 							{language && <p className=''>Language: {language} </p>}

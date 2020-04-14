@@ -16,6 +16,7 @@ body {
 	background: var(--mainWhite);
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	line-height: 1.4;
+	overflow-x: hidden;
 }
 
 .btn-danger {
@@ -185,7 +186,6 @@ body {
 /* Algolia Api customization */
 
 .header {
-	background-color: var(--light-color);
 	height: 10vh;
 	display: flex;
 	justify-content: center;
@@ -199,7 +199,7 @@ body {
 }
 
 .ais-SearchBox-input {
-	min-width: 60vw !important;
+	min-width: 80vw !important;
 	border: 1px solid var(--dark-color) !important;
 	padding: 15px;
 }
@@ -209,9 +209,7 @@ body {
 }
 
 .ais-SearchBox-submit {
-	min-width: calc(100vw-85vw);
-	padding: 15px;
-	color: var(--light-color);
+	display: none;
 }
 
 .ais-SearchBox-reset {
@@ -227,10 +225,9 @@ main {
 }
 
 ul {
-	width: 100%;
-	margin-left: 6px;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+	grid-gap: 1rem;
 }
 
 li {
@@ -251,7 +248,6 @@ li {
 	display: flex;
 	width: 18rem;
 	border-radius: 10px;
-	margin: 15px;
 	padding: 15px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
 }
@@ -285,7 +281,7 @@ a {
 }
 
 a:visited {
-	color: black;
+	color: var(--dark-color);
 }
 
 .ais-Pagination-list {
@@ -314,11 +310,11 @@ a:visited {
 		display: flex;
 	}
 
-	/* .search-bar {
+	.search-bar {
 		justify-content: center;
-	} */
+	}
 
-	input {
+	.ais-SearchBox-input {
 		min-width: 250px;
 		border: none;
 		border-radius: 0.5em;
