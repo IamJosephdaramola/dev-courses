@@ -1,6 +1,8 @@
 ## Frontend Task 1
 
-The search component of this application was built with Agolia Api and instant-reactsearch-dom
+The search component of this application was built with Agolia Api and instant-reactsearch-dom.
+
+It took me two days to complete this task
 
 ## Available Scripts
 
