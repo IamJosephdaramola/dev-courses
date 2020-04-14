@@ -60,7 +60,7 @@ const Hit = ({ hit }) => (
 					Author: <Highlight attribute='author' hit={hit} className='card-author' />
 				</li>
 				<li className='list-group-item card-category'>
-					Category: <span>{hit.category}</span>
+					Level: <Highlight attribute='level' hit={hit} />
 				</li>
 				{hit.providerRatings && (
 					<li className='list-group-item'>
