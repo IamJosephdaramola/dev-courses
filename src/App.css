@@ -185,8 +185,11 @@ body {
 /* Algolia Api customization */
 
 .header {
-	background-color: #fff;
-	height: 20vh;
+	background-color: var(--light-color);
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .search-bar {
@@ -208,11 +211,15 @@ body {
 .ais-SearchBox-submit {
 	min-width: calc(100vw-85vw);
 	padding: 15px;
-	color: #c4c4c4;
+	color: var(--light-color);
 }
 
 .ais-SearchBox-reset {
 	display: none;
+}
+
+.ais-SortBy-select {
+	padding: 1em 2em;
 }
 
 main {
@@ -242,10 +249,11 @@ li {
 .card {
 	background-color: #f9f9f9;
 	display: flex;
+	width: 18rem;
 	border-radius: 10px;
 	margin: 15px;
 	padding: 15px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 12px 0 rgba(0, 0, 0, 0.19);
 }
 
 .card-contents {
